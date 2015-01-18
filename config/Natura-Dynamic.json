@@ -13,7 +13,13 @@
     "Natura Forestry Compatibility": {
       "enabled": true
     },
+    "Natura Waila Compatibility": {
+      "enabled": true
+    },
     "Natura TE4 Compatibility": {
+      "enabled": true
+    },
+    "Natura FMP Compatibility": {
       "enabled": true
     }
   }
