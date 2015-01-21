@@ -21,6 +21,9 @@
     },
     "Natura FMP Compatibility": {
       "enabled": true
+    },
+    "Natura Thaumcraft Compatibility": {
+      "enabled": true
     }
   }
 }
