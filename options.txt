@@ -5,7 +5,7 @@ gamma:1.0
 saturation:0.0
 renderDistance:10
 guiScale:3
-particles:0
+particles:2
 bobView:true
 anaglyph3d:false
 advancedOpengl:false
@@ -39,7 +39,7 @@ chatHeightUnfocused:0.44366196
 chatScale:1.0
 chatWidth:1.0
 showInventoryAchievementHint:false
-mipmapLevels:4
+mipmapLevels:0
 anisotropicFiltering:1
 streamBytesPerPixel:0.5
 streamMicVolume:1.0
@@ -94,6 +94,7 @@ key_Familiar Manager:34
 key_Minion Manager:35
 key_Minion Selection:36
 key_veinminer.key.enable:-97
+key_Baubles Inventory:48
 key_waila.keybind.wailaconfig:82
 key_waila.keybind.wailadisplay:79
 key_waila.keybind.liquid:80
@@ -106,7 +107,6 @@ key_Goggles of Revealing:19
 key_Step Assist:0
 key_Speed:0
 key_Yeta Wrench Mode:21
-key_Baubles Inventory:48
 key_Portable Dual Work Table:25
 key_invtweaks.key.sort:19
 key_Charge:47
@@ -131,7 +131,7 @@ soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:0.112676054
 soundCategory_block:0.20422535
-soundCategory_hostile:0.20422535
+soundCategory_hostile:0.5070422
 soundCategory_neutral:0.17605634
 soundCategory_player:0.30985916
 soundCategory_ambient:0.28169015
