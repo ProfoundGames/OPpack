@@ -3534,13 +3534,13 @@ public class aji {
     INSTANCEOF akw
     PUTFIELD aji.isTileProvider : Z
    L7
-    LINENUMBER 2146 L7
+    LINENUMBER 2151 L7
     ALOAD 0
     BIPUSH 16
     ANEWARRAY java/lang/String
     PUTFIELD aji.harvestTool : [Ljava/lang/String;
    L8
-    LINENUMBER 2147 L8
+    LINENUMBER 2152 L8
     ALOAD 0
     BIPUSH 16
     NEWARRAY T_INT
@@ -3610,7 +3610,7 @@ public class aji {
     IASTORE
     PUTFIELD aji.harvestLevel : [I
    L9
-    LINENUMBER 2227 L9
+    LINENUMBER 2232 L9
     ALOAD 0
     NEW aji$4
     DUP
@@ -3618,7 +3618,7 @@ public class aji {
     INVOKESPECIAL aji$4.<init> (Laji;)V
     PUTFIELD aji.captureDrops : Ljava/lang/ThreadLocal;
    L10
-    LINENUMBER 2231 L10
+    LINENUMBER 2236 L10
     ALOAD 0
     NEW aji$5
     DUP
@@ -7801,9 +7801,34 @@ public class aji {
     MAXLOCALS = 2
 
   // access flags 0x1
-  public getPickBlock(Lazu;Lahb;III)Ladd;
+  public getPickBlock(Lazu;Lahb;IIILyz;)Ladd;
    L0
     LINENUMBER 1796 L0
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    ILOAD 3
+    ILOAD 4
+    ILOAD 5
+    INVOKEVIRTUAL aji.getPickBlock (Lazu;Lahb;III)Ladd;
+    ARETURN
+   L1
+    LOCALVARIABLE this Laji; L0 L1 0
+    LOCALVARIABLE target Lazu; L0 L1 1
+    LOCALVARIABLE world Lahb; L0 L1 2
+    LOCALVARIABLE x I L0 L1 3
+    LOCALVARIABLE y I L0 L1 4
+    LOCALVARIABLE z I L0 L1 5
+    LOCALVARIABLE player Lyz; L0 L1 6
+    MAXSTACK = 6
+    MAXLOCALS = 7
+
+  // DEPRECATED
+  // access flags 0x20001
+  public getPickBlock(Lazu;Lahb;III)Ladd;
+  @Ljava/lang/Deprecated;()
+   L0
+    LINENUMBER 1801 L0
     ALOAD 0
     ALOAD 2
     ILOAD 3
@@ -7812,15 +7837,15 @@ public class aji {
     INVOKEVIRTUAL aji.d (Lahb;III)Ladb;
     ASTORE 6
    L1
-    LINENUMBER 1798 L1
+    LINENUMBER 1803 L1
     ALOAD 6
     IFNONNULL L2
    L3
-    LINENUMBER 1800 L3
+    LINENUMBER 1805 L3
     ACONST_NULL
     ARETURN
    L2
-    LINENUMBER 1803 L2
+    LINENUMBER 1808 L2
    FRAME FULL [aji azu ahb I I I adb] []
     ALOAD 6
     INSTANCEOF abh
@@ -7838,7 +7863,7 @@ public class aji {
    FRAME FULL [aji azu ahb I I I adb] [aji]
     ASTORE 7
    L6
-    LINENUMBER 1804 L6
+    LINENUMBER 1809 L6
     NEW add
     DUP
     ALOAD 6
@@ -7866,7 +7891,7 @@ public class aji {
   // access flags 0x1
   public isFoliage(Lahl;III)Z
    L0
-    LINENUMBER 1815 L0
+    LINENUMBER 1820 L0
     ICONST_0
     IRETURN
    L1
@@ -7882,7 +7907,7 @@ public class aji {
   public addHitEffects(Lahb;Lazu;Lbkn;)Z
   @Lcpw/mods/fml/relauncher/SideOnly;(value=Lcpw/mods/fml/relauncher/Side;.CLIENT)
    L0
-    LINENUMBER 1832 L0
+    LINENUMBER 1837 L0
     ICONST_0
     IRETURN
    L1
@@ -7897,7 +7922,7 @@ public class aji {
   public addDestroyEffects(Lahb;IIIILbkn;)Z
   @Lcpw/mods/fml/relauncher/SideOnly;(value=Lcpw/mods/fml/relauncher/Side;.CLIENT)
    L0
-    LINENUMBER 1852 L0
+    LINENUMBER 1857 L0
     ICONST_0
     IRETURN
    L1
@@ -7914,7 +7939,7 @@ public class aji {
   // access flags 0x1
   public canSustainPlant(Lahl;IIILnet/minecraftforge/common/util/ForgeDirection;Lnet/minecraftforge/common/IPlantable;)Z
    L0
-    LINENUMBER 1876 L0
+    LINENUMBER 1881 L0
     ALOAD 6
     ALOAD 1
     ILOAD 2
@@ -7925,7 +7950,7 @@ public class aji {
     INVOKEINTERFACE net/minecraftforge/common/IPlantable.getPlant (Lahl;III)Laji;
     ASTORE 7
    L1
-    LINENUMBER 1877 L1
+    LINENUMBER 1882 L1
     ALOAD 6
     ALOAD 1
     ILOAD 2
@@ -7936,7 +7961,7 @@ public class aji {
     INVOKEINTERFACE net/minecraftforge/common/IPlantable.getPlantType (Lahl;III)Lnet/minecraftforge/common/EnumPlantType;
     ASTORE 8
    L2
-    LINENUMBER 1879 L2
+    LINENUMBER 1884 L2
     ALOAD 7
     GETSTATIC ajn.aF : Laji;
     IF_ACMPNE L3
@@ -7944,11 +7969,11 @@ public class aji {
     GETSTATIC ajn.aF : Laji;
     IF_ACMPNE L3
    L4
-    LINENUMBER 1881 L4
+    LINENUMBER 1886 L4
     ICONST_1
     IRETURN
    L3
-    LINENUMBER 1884 L3
+    LINENUMBER 1889 L3
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     ALOAD 7
     GETSTATIC ajn.aH : Laji;
@@ -7957,11 +7982,11 @@ public class aji {
     GETSTATIC ajn.aH : Laji;
     IF_ACMPNE L5
    L6
-    LINENUMBER 1886 L6
+    LINENUMBER 1891 L6
     ICONST_1
     IRETURN
    L5
-    LINENUMBER 1889 L5
+    LINENUMBER 1894 L5
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     ALOAD 6
     INSTANCEOF ajr
@@ -7972,11 +7997,11 @@ public class aji {
     INVOKEVIRTUAL ajr.a (Laji;)Z
     IFEQ L7
    L8
-    LINENUMBER 1891 L8
+    LINENUMBER 1896 L8
     ICONST_1
     IRETURN
    L7
-    LINENUMBER 1894 L7
+    LINENUMBER 1899 L7
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     GETSTATIC aji$6.$SwitchMap$net$minecraftforge$common$EnumPlantType : [I
     ALOAD 8
@@ -7992,7 +8017,7 @@ public class aji {
       7: L15
       default: L16
    L9
-    LINENUMBER 1896 L9
+    LINENUMBER 1901 L9
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     ALOAD 0
     GETSTATIC ajn.m : Lanh;
@@ -8006,7 +8031,7 @@ public class aji {
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] [I]
     IRETURN
    L10
-    LINENUMBER 1897 L10
+    LINENUMBER 1902 L10
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     ALOAD 0
     GETSTATIC ajn.aM : Laji;
@@ -8020,7 +8045,7 @@ public class aji {
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] [I]
     IRETURN
    L11
-    LINENUMBER 1898 L11
+    LINENUMBER 1903 L11
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     ALOAD 0
     GETSTATIC ajn.ak : Laji;
@@ -8034,7 +8059,7 @@ public class aji {
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] [I]
     IRETURN
    L12
-    LINENUMBER 1899 L12
+    LINENUMBER 1904 L12
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     ALOAD 0
     ALOAD 1
@@ -8045,7 +8070,7 @@ public class aji {
     INVOKEVIRTUAL aji.isSideSolid (Lahl;IIILnet/minecraftforge/common/util/ForgeDirection;)Z
     IRETURN
    L13
-    LINENUMBER 1900 L13
+    LINENUMBER 1905 L13
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     ALOAD 0
     GETSTATIC ajn.c : Lalh;
@@ -8067,7 +8092,7 @@ public class aji {
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] [I]
     IRETURN
    L14
-    LINENUMBER 1901 L14
+    LINENUMBER 1906 L14
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     ALOAD 1
     ILOAD 2
@@ -8092,7 +8117,7 @@ public class aji {
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] [I]
     IRETURN
    L15
-    LINENUMBER 1903 L15
+    LINENUMBER 1908 L15
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     ALOAD 0
     GETSTATIC ajn.c : Lalh;
@@ -8114,7 +8139,7 @@ public class aji {
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] [I]
     ISTORE 9
    L31
-    LINENUMBER 1904 L31
+    LINENUMBER 1909 L31
     ALOAD 1
     ILOAD 2
     ICONST_1
@@ -8166,7 +8191,7 @@ public class aji {
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType I] [I]
     ISTORE 10
    L35
-    LINENUMBER 1908 L35
+    LINENUMBER 1913 L35
     ILOAD 9
     IFEQ L36
     ILOAD 10
@@ -8180,7 +8205,7 @@ public class aji {
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType I I] [I]
     IRETURN
    L16
-    LINENUMBER 1911 L16
+    LINENUMBER 1916 L16
    FRAME FULL [aji ahl I I I net/minecraftforge/common/util/ForgeDirection net/minecraftforge/common/IPlantable aji net/minecraftforge/common/EnumPlantType] []
     ICONST_0
     IRETURN
@@ -8202,7 +8227,7 @@ public class aji {
   // access flags 0x1
   public onPlantGrow(Lahb;IIIIII)V
    L0
-    LINENUMBER 1933 L0
+    LINENUMBER 1938 L0
     ALOAD 0
     GETSTATIC ajn.c : Lalh;
     IF_ACMPEQ L1
@@ -8210,7 +8235,7 @@ public class aji {
     GETSTATIC ajn.ak : Laji;
     IF_ACMPNE L2
    L1
-    LINENUMBER 1935 L1
+    LINENUMBER 1940 L1
    FRAME FULL [aji ahb I I I I I I] []
     ALOAD 1
     ILOAD 2
@@ -8222,7 +8247,7 @@ public class aji {
     INVOKEVIRTUAL ahb.d (IIILaji;II)Z
     POP
    L2
-    LINENUMBER 1937 L2
+    LINENUMBER 1942 L2
    FRAME FULL [aji ahb I I I I I I] []
     RETURN
    L3
@@ -8240,12 +8265,12 @@ public class aji {
   // access flags 0x1
   public isFertile(Lahb;III)Z
    L0
-    LINENUMBER 1952 L0
+    LINENUMBER 1957 L0
     ALOAD 0
     GETSTATIC ajn.ak : Laji;
     IF_ACMPNE L1
    L2
-    LINENUMBER 1954 L2
+    LINENUMBER 1959 L2
     ALOAD 1
     ILOAD 2
     ILOAD 3
@@ -8261,7 +8286,7 @@ public class aji {
    FRAME FULL [aji ahb I I I] [I]
     IRETURN
    L1
-    LINENUMBER 1957 L1
+    LINENUMBER 1962 L1
    FRAME FULL [aji ahb I I I] []
     ICONST_0
     IRETURN
@@ -8277,7 +8302,7 @@ public class aji {
   // access flags 0x1
   public getLightOpacity(Lahl;III)I
    L0
-    LINENUMBER 1976 L0
+    LINENUMBER 1981 L0
     ALOAD 0
     INVOKEVIRTUAL aji.k ()I
     IRETURN
@@ -8293,12 +8318,12 @@ public class aji {
   // access flags 0x1
   public canEntityDestroy(Lahl;IIILsa;)Z
    L0
-    LINENUMBER 1990 L0
+    LINENUMBER 1995 L0
     ALOAD 5
     INSTANCEOF xc
     IFEQ L1
    L2
-    LINENUMBER 1992 L2
+    LINENUMBER 1997 L2
     ALOAD 0
     GETSTATIC ajn.h : Laji;
     IF_ACMPEQ L3
@@ -8320,13 +8345,13 @@ public class aji {
    FRAME FULL [aji ahl I I I sa] [I]
     IRETURN
    L1
-    LINENUMBER 1994 L1
+    LINENUMBER 1999 L1
    FRAME FULL [aji ahl I I I sa] []
     ALOAD 5
     INSTANCEOF xa
     IFEQ L5
    L6
-    LINENUMBER 1996 L6
+    LINENUMBER 2001 L6
     ALOAD 0
     GETSTATIC ajn.Z : Laji;
     IF_ACMPEQ L7
@@ -8345,7 +8370,7 @@ public class aji {
    FRAME FULL [aji ahl I I I sa] [I]
     IRETURN
    L5
-    LINENUMBER 1999 L5
+    LINENUMBER 2004 L5
    FRAME FULL [aji ahl I I I sa] []
     ICONST_1
     IRETURN
@@ -8362,7 +8387,7 @@ public class aji {
   // access flags 0x1
   public isBeaconBase(Lahl;IIIIII)Z
    L0
-    LINENUMBER 2016 L0
+    LINENUMBER 2021 L0
     ALOAD 0
     GETSTATIC ajn.bE : Laji;
     IF_ACMPEQ L1
@@ -8400,7 +8425,7 @@ public class aji {
   // access flags 0x1
   public rotateBlock(Lahb;IIILnet/minecraftforge/common/util/ForgeDirection;)Z
    L0
-    LINENUMBER 2034 L0
+    LINENUMBER 2039 L0
     ALOAD 0
     ALOAD 1
     ILOAD 2
@@ -8422,7 +8447,7 @@ public class aji {
   // access flags 0x1
   public getValidRotations(Lahb;III)[Lnet/minecraftforge/common/util/ForgeDirection;
    L0
-    LINENUMBER 2048 L0
+    LINENUMBER 2053 L0
     ALOAD 0
     INVOKESTATIC net/minecraftforge/common/util/RotationHelper.getValidVanillaBlockRotations (Laji;)[Lnet/minecraftforge/common/util/ForgeDirection;
     ARETURN
@@ -8438,7 +8463,7 @@ public class aji {
   // access flags 0x1
   public getEnchantPowerBonus(Lahb;III)F
    L0
-    LINENUMBER 2061 L0
+    LINENUMBER 2066 L0
     ALOAD 0
     GETSTATIC ajn.X : Laji;
     IF_ACMPNE L1
@@ -8462,12 +8487,12 @@ public class aji {
   // access flags 0x1
   public recolourBlock(Lahb;IIILnet/minecraftforge/common/util/ForgeDirection;I)Z
    L0
-    LINENUMBER 2076 L0
+    LINENUMBER 2081 L0
     ALOAD 0
     GETSTATIC ajn.L : Laji;
     IF_ACMPNE L1
    L2
-    LINENUMBER 2078 L2
+    LINENUMBER 2083 L2
     ALOAD 1
     ILOAD 2
     ILOAD 3
@@ -8475,12 +8500,12 @@ public class aji {
     INVOKEVIRTUAL ahb.e (III)I
     ISTORE 7
    L3
-    LINENUMBER 2079 L3
+    LINENUMBER 2084 L3
     ILOAD 7
     ILOAD 6
     IF_ICMPEQ L1
    L4
-    LINENUMBER 2081 L4
+    LINENUMBER 2086 L4
     ALOAD 1
     ILOAD 2
     ILOAD 3
@@ -8490,11 +8515,11 @@ public class aji {
     INVOKEVIRTUAL ahb.a (IIIII)Z
     POP
    L5
-    LINENUMBER 2082 L5
+    LINENUMBER 2087 L5
     ICONST_1
     IRETURN
    L1
-    LINENUMBER 2085 L1
+    LINENUMBER 2090 L1
    FRAME FULL [aji ahb I I I net/minecraftforge/common/util/ForgeDirection I] []
     ICONST_0
     IRETURN
@@ -8513,7 +8538,7 @@ public class aji {
   // access flags 0x1
   public getExpDrop(Lahl;II)I
    L0
-    LINENUMBER 2098 L0
+    LINENUMBER 2103 L0
     ICONST_0
     IRETURN
    L1
@@ -8527,7 +8552,7 @@ public class aji {
   // access flags 0x1
   public onNeighborChange(Lahl;IIIIII)V
    L0
-    LINENUMBER 2113 L0
+    LINENUMBER 2118 L0
     RETURN
    L1
     LOCALVARIABLE this Laji; L0 L1 0
@@ -8544,7 +8569,7 @@ public class aji {
   // access flags 0x1
   public shouldCheckWeakPower(Lahl;IIII)Z
    L0
-    LINENUMBER 2126 L0
+    LINENUMBER 2131 L0
     ALOAD 0
     INVOKEVIRTUAL aji.r ()Z
     IRETURN
@@ -8561,7 +8586,7 @@ public class aji {
   // access flags 0x1
   public getWeakChanges(Lahl;III)Z
    L0
-    LINENUMBER 2143 L0
+    LINENUMBER 2148 L0
     ICONST_0
     IRETURN
    L1
@@ -8576,7 +8601,7 @@ public class aji {
   // access flags 0x1
   public setHarvestLevel(Ljava/lang/String;I)V
    L0
-    LINENUMBER 2161 L0
+    LINENUMBER 2166 L0
     ICONST_0
     ISTORE 3
    L1
@@ -8585,18 +8610,18 @@ public class aji {
     BIPUSH 16
     IF_ICMPGE L2
    L3
-    LINENUMBER 2163 L3
+    LINENUMBER 2168 L3
     ALOAD 0
     ALOAD 1
     ILOAD 2
     ILOAD 3
     INVOKEVIRTUAL aji.setHarvestLevel (Ljava/lang/String;II)V
    L4
-    LINENUMBER 2161 L4
+    LINENUMBER 2166 L4
     IINC 3 1
     GOTO L1
    L2
-    LINENUMBER 2165 L2
+    LINENUMBER 2170 L2
    FRAME FULL [aji java/lang/String I I] []
     RETURN
    L5
@@ -8610,21 +8635,21 @@ public class aji {
   // access flags 0x1
   public setHarvestLevel(Ljava/lang/String;II)V
    L0
-    LINENUMBER 2181 L0
+    LINENUMBER 2186 L0
     ALOAD 0
     GETFIELD aji.harvestTool : [Ljava/lang/String;
     ILOAD 3
     ALOAD 1
     AASTORE
    L1
-    LINENUMBER 2182 L1
+    LINENUMBER 2187 L1
     ALOAD 0
     GETFIELD aji.harvestLevel : [I
     ILOAD 3
     ILOAD 2
     IASTORE
    L2
-    LINENUMBER 2183 L2
+    LINENUMBER 2188 L2
     RETURN
    L3
     LOCALVARIABLE this Laji; L0 L3 0
@@ -8637,7 +8662,7 @@ public class aji {
   // access flags 0x1
   public getHarvestTool(I)Ljava/lang/String;
    L0
-    LINENUMBER 2194 L0
+    LINENUMBER 2199 L0
     ALOAD 0
     GETFIELD aji.harvestTool : [Ljava/lang/String;
     ILOAD 1
@@ -8652,7 +8677,7 @@ public class aji {
   // access flags 0x1
   public getHarvestLevel(I)I
    L0
-    LINENUMBER 2206 L0
+    LINENUMBER 2211 L0
     ALOAD 0
     GETFIELD aji.harvestLevel : [I
     ILOAD 1
@@ -8667,7 +8692,7 @@ public class aji {
   // access flags 0x1
   public isToolEffective(Ljava/lang/String;I)Z
    L0
-    LINENUMBER 2219 L0
+    LINENUMBER 2224 L0
     LDC "pickaxe"
     ALOAD 1
     INVOKEVIRTUAL java/lang/String.equals (Ljava/lang/Object;)Z
@@ -8682,12 +8707,12 @@ public class aji {
     GETSTATIC ajn.Z : Laji;
     IF_ACMPNE L1
    L2
-    LINENUMBER 2220 L2
+    LINENUMBER 2225 L2
    FRAME FULL [aji java/lang/String I] []
     ICONST_0
     IRETURN
    L1
-    LINENUMBER 2221 L1
+    LINENUMBER 2226 L1
    FRAME FULL [aji java/lang/String I] []
     ALOAD 0
     GETFIELD aji.harvestTool : [Ljava/lang/String;
@@ -8697,7 +8722,7 @@ public class aji {
     ICONST_0
     IRETURN
    L3
-    LINENUMBER 2222 L3
+    LINENUMBER 2227 L3
    FRAME FULL [aji java/lang/String I] []
     ALOAD 0
     GETFIELD aji.harvestTool : [Ljava/lang/String;
@@ -8718,29 +8743,29 @@ public class aji {
   // declaration: java.util.List<add> captureDrops(boolean)
   protected captureDrops(Z)Ljava/util/List;
    L0
-    LINENUMBER 2237 L0
+    LINENUMBER 2242 L0
     ILOAD 1
     IFEQ L1
    L2
-    LINENUMBER 2239 L2
+    LINENUMBER 2244 L2
     ALOAD 0
     GETFIELD aji.captureDrops : Ljava/lang/ThreadLocal;
     ICONST_1
     INVOKESTATIC java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;
     INVOKEVIRTUAL java/lang/ThreadLocal.set (Ljava/lang/Object;)V
    L3
-    LINENUMBER 2240 L3
+    LINENUMBER 2245 L3
     ALOAD 0
     GETFIELD aji.capturedDrops : Ljava/lang/ThreadLocal;
     INVOKEVIRTUAL java/lang/ThreadLocal.get ()Ljava/lang/Object;
     CHECKCAST java/util/List
     INVOKEINTERFACE java/util/List.clear ()V
    L4
-    LINENUMBER 2241 L4
+    LINENUMBER 2246 L4
     ACONST_NULL
     ARETURN
    L1
-    LINENUMBER 2245 L1
+    LINENUMBER 2250 L1
    FRAME FULL [aji I] []
     ALOAD 0
     GETFIELD aji.captureDrops : Ljava/lang/ThreadLocal;
@@ -8748,7 +8773,7 @@ public class aji {
     INVOKESTATIC java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;
     INVOKEVIRTUAL java/lang/ThreadLocal.set (Ljava/lang/Object;)V
    L5
-    LINENUMBER 2246 L5
+    LINENUMBER 2251 L5
     ALOAD 0
     GETFIELD aji.capturedDrops : Ljava/lang/ThreadLocal;
     INVOKEVIRTUAL java/lang/ThreadLocal.get ()Ljava/lang/Object;

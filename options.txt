@@ -87,6 +87,8 @@ key_key.hotbar.8:9
 key_key.hotbar.9:10
 key_Zoom:29
 key_key.myfit.desc:50
+key_Tool Increase:201
+key_Tool Decrease:209
 key_Mount Ability:33
 key_Mount Inventory:35
 key_Beastiary:48
@@ -126,12 +128,12 @@ key_key.journeymap.day:26
 key_key.journeymap.night:27
 key_key.journeymap.minimap_preset:43
 key_key.journeymap.create_waypoint:48
-soundCategory_master:1.0
+soundCategory_master:0.51324505
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:0.112676054
 soundCategory_block:0.20422535
-soundCategory_hostile:0.5070422
+soundCategory_hostile:0.5
 soundCategory_neutral:0.17605634
 soundCategory_player:0.30985916
 soundCategory_ambient:0.28169015
